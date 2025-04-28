@@ -1,4 +1,4 @@
-import argparse
+limport argparse
 import importlib
 import torch
 import os
@@ -34,20 +34,20 @@ def load_teacher_model(path, n_timesteps, time_scale, device):
     teacher_ema.load_state_dict(ckpt)
     teacher_ema_diffusion = make_diffusion(teacher_ema, n_timesteps, time_scale, device)
     return teacher_ema, teacher_ema_diffusion
-
+s
 
 def make_argument_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base_checkpoint", type=str, default="checkpoints/200_Network.pth")
     parser.add_argument("--data_root", type=str, default="train")
-    parser.add_argument("--n_timesteps", type=int, default=2)
+    parser.add_argument("--n_timesteps", type=int, default=16)
     parser.add_argument("--time_scale", type=int, default=1)
     parser.add_argument("--target_steps", type=int, default=1)
     parser.add_argument("--acc_factor", type=int, default=-1)
     parser.add_argument("--epoch", type=int, default=5)
     parser.add_argument("--module", type=str, default="celeba_u")
     parser.add_argument("--gamma", type=float, default=0)
-    parser.add_argument("--num_iters", type=int, default=55694)
+    parser.add_argument("--num_iters", type=int, help="size of dataset",default=20000)
     parser.add_argument("--batch_size", type=int, default=2)
     parser.add_argument("--lr", type=float, default=0.3 * 5e-5)
     parser.add_argument("--scheduler", type=str, default="StrategyLinearLR")
