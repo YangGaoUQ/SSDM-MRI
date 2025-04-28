@@ -13,13 +13,13 @@ def make_argument_parser():
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--base_checkpoint", help="Path to base checkpoint.", type=str,
-                        default="checkpoint/ori_net/190_Network.pth")
-    parser.add_argument("--n_timesteps",default=2000)
+                        default="checkpointh")
+    parser.add_argument("--n_timesteps",default=16)
     parser.add_argument("--time_scale", default=1)
-    parser.add_argument("--target_steps", help="target distillate steps", default=1000)
+    parser.add_argument("--target_steps", help="target distillate steps", default=1)
     parser.add_argument("--AF", help="undersampling factor", default=4)
     parser.add_argument("--epoch",default=2)
-    parser.add_argument("--num_iters", help="Num iterations.", type=int, default=50000)
+    parser.add_argument("--num_iters", help="Num iterations.", type=int, default=20000)
 
     parser.add_argument("--module", help="Model module.", type=str, default="celeba_u")
     parser.add_argument("--gamma", help="Gamma factor for SNR weights.", type=float, default=0)
