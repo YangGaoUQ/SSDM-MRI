@@ -11,7 +11,7 @@
         "results": "results",
         "checkpoint": "checkpoint",
         //"resume_state": "experiments/train_inpainting_celebahq_220426_233652/checkpoint/190"
-        "resume_state": "checkpoints/"// ex: 100, loading .state  and .pth from given epoch and iteration
+        "resume_state": "checkpoints/1_steps"// ex: 100, loading .state  and .pth from given epoch and iteration
     },
 
     "datasets": { // train or test
@@ -112,7 +112,7 @@
                         },
                         "test": {
                             "schedule": "cosine",
-                            "n_timestep": 2
+                            "n_timestep": 1
                         }
                     }
                 }
