@@ -1,5 +1,5 @@
 
-# PHighly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models
+# Highly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models
 
 - This repository is for our SSDM-MRI method, which enables a direct QSM reconstruction from MRI raw phases acquired at arbitrary orientations ([DOI link](https://doi.org/10.1016/j.media.2024.103160)).
 
