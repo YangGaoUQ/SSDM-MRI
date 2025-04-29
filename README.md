@@ -34,7 +34,8 @@ python run.py -p train -c config/img_restoration.json
 
 ## Sampling 
 If you want to test with a pre-trained model, still using Real_Data as an example:
-(1) Download the corresponding pre-trained model here [Google Drive]()
+(1) Download the corresponding pre-trained model here [Google Drive](). Create the "checkpoints" folder and put the pre-trained model in it.
+
 (2) Modify the following entries in the config/img_restoration.json file:
 ```yaml
         "test": {
