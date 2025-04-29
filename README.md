@@ -21,7 +21,8 @@ If you want to train your own model from scratch, take Real_Data as an example:
                 "name": ["data.dataset", "MRI_Restoration"], // import Dataset() class / function(not recommend) from dataset.dataset.py (default is [dataset.dataset.py])
                 "args":{ // arguments to initialize dataset
                     "data_root": "train",
-                    "acc_factor": -1
+                    "acc_factor": -1,
+                    "mask_type": "gaussian1d"
                 }
             },
 ```
@@ -31,9 +32,24 @@ If you want to train your own model from scratch, take Real_Data as an example:
 python run.py -p train -c config/img_restoration.json
 ```
 
-
-
-
 ## Sampling 
-### 
+If you want to test with a pre-trained model, still using Real_Data as an example:
+
+(1) Modify the following entries in the config/img_restoration.json file:
+```yaml
+        "test": {
+            "which_dataset": {
+                "name": ["data.dataset","MRI_Restoration"], // import Dataset() class / function(not recommend) from default file
+                "args":{
+                    "data_root": "demo",
+                    "acc_factor":8,
+                    "mask_type": "gaussian1d"
+                }
+            },
+```
+
+(2) then run the following command:  
+```python
+python run.py -p test -c config/img_restoration.json
+```
 
