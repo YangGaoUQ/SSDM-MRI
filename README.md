@@ -4,7 +4,7 @@
 - This repository is for our SSDM-MRI method.
 
 ## Requirements
-  source Requirements.sh
+  bash requirements.sh
 
 ## Training
 
