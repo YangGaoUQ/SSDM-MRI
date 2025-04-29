@@ -34,8 +34,8 @@ python run.py -p train -c config/img_restoration.json
 
 ## Sampling 
 If you want to test with a pre-trained model, still using Real_Data as an example:
-
-(1) Modify the following entries in the config/img_restoration.json file:
+(1) Download the corresponding pre-trained model here [Google Drive]()
+(2) Modify the following entries in the config/img_restoration.json file:
 ```yaml
         "test": {
             "which_dataset": {
@@ -48,7 +48,7 @@ If you want to test with a pre-trained model, still using Real_Data as an exampl
             },
 ```
 
-(2) then run the following command:  
+(3) then run the following command:  
 ```python
 python run.py -p test -c config/img_restoration.json
 ```
