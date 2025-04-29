@@ -10,9 +10,10 @@ bash requirements.sh
 
 
 ## Training
-### If you want to train your own model from scratch, take Real_Data as an example:
+If you want to train your own model from scratch, take Real_Data as an example:
 (1)enter the Real_Data directory, modify the train path and other training parameters in the config/img_restoration.json file,
-     ```yaml
+
+```yaml
 "which_dataset": {  // import designated dataset using arguments 
     "name": ["data.dataset", "InpaintDataset"], // import Dataset() class
     "args":{ // arguments to initialize dataset
@@ -22,8 +23,9 @@ bash requirements.sh
     } 
 },
 ```
-### (2)then run the following command:  
-#### python run.py -p train -c config/img_restoration.json
+(2)then run the following command:  
+
+python run.py -p train -c config/img_restoration.json
 
 
 
