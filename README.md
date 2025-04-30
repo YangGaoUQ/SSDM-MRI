@@ -9,7 +9,7 @@ bash requirements.sh
 ```
 
 
-## Training
+## Pre-Training and Distillation
 If you want to train your own model from scratch, take Real_Data as an example:
 
 (1)Enter the Real_Data directory, modify the train path and other training parameters in the config/img_restoration.json file:
@@ -27,10 +27,12 @@ If you want to train your own model from scratch, take Real_Data as an example:
             },
 ```
 
-(2)then run the following command:  
+(2)Then run the following command:  
 ```python
 python run.py -p train -c config/img_restoration.json
 ```
+
+(3)After completing the pre-training of the model, you can run distillate.py for distillation
 
 ## Sampling 
 If you want to test with a pre-trained model, still using Real_Data as an example:
@@ -50,7 +52,7 @@ If you want to test with a pre-trained model, still using Real_Data as an exampl
             },
 ```
 
-(3) then run the following command:  
+(3) Then run the following command:  
 ```python
 python run.py -p test -c config/img_restoration.json
 ```
