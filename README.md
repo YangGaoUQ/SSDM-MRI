@@ -35,7 +35,7 @@ python run.py -p train -c config/img_restoration.json
 (3)After completing the pre-training of the model, you can run distillate.py for distillation
 
 ## Sampling 
-If you want to test with a pre-trained model, still using Real_Data as an example:
+If you want to test with a pre-trained model, still using Real_Data as an example(when calculating PSNR and SSIM, we used threshold processing):
 
 (1) Download the corresponding pre-trained model here [Google Drive](). Create the "checkpoints" folder and put the pre-trained model in it.
 
