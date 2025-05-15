@@ -21,7 +21,7 @@
                 "args":{ // arguments to initialize dataset
                     "data_root": "train",
                     "acc_factor": -1,
-                    "mask_type": "gaussian1d"
+                    "mask_type": None
                 }
             },
             "dataloader":{
@@ -48,7 +48,7 @@
                 "args":{
                     "data_root": "test/single-coil",
                     "acc_factor":8,
-                    "mask_type": "gaussian1d"
+                    "mask_type": "gaussian1d"  // data/mask.py 
                 }
             },
             "dataloader":{
