@@ -9,7 +9,9 @@ def Gen_Sampling_Mask(MatrixSize,AF=-1):
     # pa = 12, pb = 1.8, AF = 4;(0.25 sampling),
     # pa = 17, pb = 1.8 AF = 6;
     # pa = 22, pb = 1.8, AF = 8;
-
+    if AF==-1:
+        AF=random.choice([4, 6, 8, 10, 12])
+    
     if AF==4:
         Pa=12
         Pb=1.8
