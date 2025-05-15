@@ -7,9 +7,18 @@ import random
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 def get_mask(img_size,acc_factor,type,center_fraction=None,fix=False,):
-
     if(acc_factor==-1):
         acc_factor = random.choice([4, 6, 8, 10, 12, 15])
+    if(type is None):
+        random_choice = random.randint(1, 4)
+        if random_choice == 1:
+            type = 'gaussian2d'
+        elif random_choice == 2:
+            type = 'gaussian1d'
+        elif random_choice == 3:
+            type = 'uniform1d'
+        elif random_choice == 4:
+            type = 'poisson'
 
     if acc_factor==4:
         center_fraction=0.08
