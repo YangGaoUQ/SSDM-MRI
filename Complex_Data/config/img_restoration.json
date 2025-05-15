@@ -48,7 +48,7 @@
                 "name": "MyDataSet", // import Dataset() class / function(not recommend) from default file
                 "args":{
                     "data_root": "test",
-                    "acc_factor":-1
+                    "acc_factor":8
                 }
             },
             "dataloader":{
