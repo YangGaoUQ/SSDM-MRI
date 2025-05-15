@@ -46,7 +46,7 @@
             "which_dataset": {
                 "name": ["data.dataset","MRI_Restoration"], // import Dataset() class / function(not recommend) from default file
                 "args":{
-                    "data_root": "mul_knee",
+                    "data_root": "test/single-coil",
                     "acc_factor":8,
                     "mask_type": "gaussian1d"
                 }
