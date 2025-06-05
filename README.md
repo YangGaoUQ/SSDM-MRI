@@ -37,7 +37,7 @@ python run.py -p train -c config/img_restoration.json
 ## Sampling 
 If you want to test with a pre-trained model, still using Real_Data as an example(when calculating PSNR and SSIM, we used threshold processing):
 
-(1) Download the corresponding pre-trained model here [Google Drive](). Create the "checkpoints" folder and put the pre-trained model in it.
+(1) Download the corresponding pre-trained model here [Google Drive](https://drive.google.com/drive/folders/1U7h4jc0bPTq_Imdmb2twTBu7CReW0E3z?usp=drive_link). Create the "checkpoints" folder and put the pre-trained model in it.
 
 (2) Modify the following entries in the config/img_restoration.json file:
 ```yaml
