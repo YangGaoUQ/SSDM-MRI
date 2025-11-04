@@ -10,6 +10,7 @@ Fig.1 Overall framework of the proposed Single-Step Diffusion Model-based MRI re
 ### (2)Representative Result
 ![结果图](./images/result.png)
 Fig.2 Comparison of the proposed SSDM-MRI with Score-MRI on four brain and two knee images subsampled with different types of masks at acceleration factors. Red arrows point to the reconstruction errors in Score-MRI results, and green arrows point to better fine details preserved in Score-MRI.
+
 # Manual
 ## Requirements
 ```python
