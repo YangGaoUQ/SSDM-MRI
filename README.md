@@ -16,7 +16,8 @@ Fig.2 Comparison of the proposed SSDM-MRI with Score-MRI on four brain and two k
 ```python
 bash requirements.sh
 ```
-
+## Data Acquisition
+You can get the fastmri dataset at https://fastmri.med.nyu.edu/
 
 ## Pre-Training and Distillation
 If you want to train your own model from scratch, take fastMRI as an example:
