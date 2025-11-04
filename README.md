@@ -17,9 +17,9 @@ bash requirements.sh
 
 
 ## Pre-Training and Distillation
-If you want to train your own model from scratch, take Real_Data as an example:
+If you want to train your own model from scratch, take fastMRI as an example:
 
-(1)Enter the Real_Data directory, modify the train path and other training parameters in the config/img_restoration.json file:
+(1)Enter the fastMRI directory, modify the train path and other training parameters in the config/img_restoration.json file:
 
 ```yaml
     "datasets": { // train or test
@@ -42,7 +42,7 @@ python run.py -p train -c config/img_restoration.json
 (3)After completing the pre-training of the model, you can run distillate.py for distillation
 
 ## Sampling 
-If you want to test with a pre-trained model, still using Real_Data as an example(when calculating PSNR and SSIM, we used threshold processing):
+If you want to test with a pre-trained model, still using fastMRI as an example(when calculating PSNR and SSIM, we used threshold processing):
 
 (1) Download the corresponding pre-trained model here [Google Drive](https://drive.google.com/drive/folders/1U7h4jc0bPTq_Imdmb2twTBu7CReW0E3z?usp=drive_link). Create the "checkpoints" folder and put the pre-trained model in it.
 
