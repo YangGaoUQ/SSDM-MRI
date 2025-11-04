@@ -3,6 +3,10 @@
 - This repository contains the implementation of our SSDM-MRI method.
 - Both Complex_Data and Real_Data folders follow a similar reconstruction pipeline, with slight code differences tailored to the data type: Complex_Data supports both magnitude and phase reconstruction, while Real_Data is for magnitude-only reconstruction.
 
+##Overview
+(1)Overall Framework
+
+(2)Representative Result
 ## Requirements
 ```python
 bash requirements.sh
