@@ -4,9 +4,9 @@
 - Both Complex_Data and Real_Data folders follow a similar reconstruction pipeline, with slight code differences tailored to the data type: Complex_Data supports both magnitude and phase reconstruction, while Real_Data is for magnitude-only reconstruction.
 
 ## Overview
-(1)Overall Framework
-(./images/figure1.pdf)
-(2)Representative Result
+###(1)Overall Framework
+[查看架构图PDF](./images/figure1.pdf)
+###(2)Representative Result
 ## Requirements
 ```python
 bash requirements.sh
