@@ -5,7 +5,7 @@
 
 ## Overview
 ###(1)Overall Framework
-[查看架构图PDF](./images/figure1.pdf)
+![框架图](./images/framework.png)
 ###(2)Representative Result
 ## Requirements
 ```python
