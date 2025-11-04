@@ -6,9 +6,10 @@
 ## Overview
 ### (1)Overall Framework
 ![框架图](./images/framework.png)
+Fig.1 Overall framework of the proposed Single-Step Diffusion Model-based MRI reconstruction (SSDM-MRI) method, which is developed by iteratively distilling a pre-trained conditional diffusion model (DM) to reduce the necessary number of reverse sampling steps from original T steps to just one step. (a) demonstrates the original T reverse steps using the pretrained DM, and (b) illustrates the proposed iterative selective distillation, which is only conducted on the second half T/2 steps (green circles) during each iteration, and the paired shortcut reverse sampling strategy, which starts from a single forward diffusion from the zero-filling reconstruction, instead of starting from the pure noise. The bottom panel demonstrates the final single-step reconstruction pipeline after a sufficient number (4 in this work) of iterations of distillation.
 ### (2)Representative Result
 ![结果图](./images/result.png)
-
+Fig.2 Comparison of the proposed SSDM-MRI with Score-MRI on four brain and two knee images subsampled with different types of masks at acceleration factors. Red arrows point to the reconstruction errors in Score-MRI results, and green arrows point to better fine details preserved in Score-MRI.
 # Manual
 ## Requirements
 ```python
