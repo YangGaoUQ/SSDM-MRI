@@ -8,6 +8,8 @@
 ![框架图](./images/framework.png)
 ### (2)Representative Result
 ![结果图](./images/result.png)
+
+# Manual
 ## Requirements
 ```python
 bash requirements.sh
