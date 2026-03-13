@@ -1,6 +1,6 @@
 
 # Highly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models
-- This repository contains the implementation of our SSDM-MRI method.
+- This repository contains the implementation of our SSDM-MRI method (Liu, J., Lin, Q., Xiong, Z., Shan, S., Liu, C., Li, M., Liu, F., Pike, G.B., Sun, H. and Gao, Y., 2026. Highly undersampled mri reconstruction via a single posterior sampling of diffusion models. IEEE Transactions on Medical Imaging. DOI: 10.1109/TMI.2026.3654585. https://ieeexplore.ieee.org/abstract/document/11355445/).
 - Both Complex_Data and Real_Data folders follow a similar reconstruction pipeline, with slight code differences tailored to the data type: Complex_Data supports both magnitude and phase reconstruction, while Real_Data is for magnitude-only reconstruction.
 
 ## Overview
