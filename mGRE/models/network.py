@@ -136,6 +136,8 @@ class Network(BaseNetwork):
         t = torch.full((b,), self.num_timesteps, device=y_cond.device, dtype=torch.long)
         gamma_t = extract(self.gammas, t.long()-1 , x_shape=(1, 1))
         noise = default(None, lambda: torch.randn_like(y_cond))
+        # y_t = default(y_t, lambda: torch.randn_like(y_cond))
+        # start from noisy subsampled image fewer steps
         y_t = self.q_sample(y_0=y_cond, sample_gammas=gamma_t.view(1, 1, 1, 1),noise=noise)
         ret_arr = y_t
         
