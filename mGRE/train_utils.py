@@ -45,7 +45,11 @@ class DiffusionDistillation:
                 sub_kspace=data.get('sub_kspace')
 
                 scheduler.zero_grad()
-                time = 2 * torch.randint(0, student_diffusion.num_timesteps, (cond_image.shape[0],), device=device)
+
+                # range(0,T)
+                # time = 2 * torch.randint(0, student_diffusion.num_timesteps, (cond_image.shape[0],), device=device)
+                # range(0,T/2) 
+                time = torch.randint(0, student_diffusion.num_timesteps, (cond_image.shape[0],), device=device)
 
                 loss = teacher_diffusion.distill_loss(student_diffusion, gt_image, cond_image, time, mask=mask,sub_kspace=sub_kspace)
                 L = loss.item()
