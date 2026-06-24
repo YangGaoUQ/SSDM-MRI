@@ -175,6 +175,8 @@ class Network(BaseNetwork):
         gamma_t = extract(self.gammas, t.long()-1 , x_shape=(1, 1))
 
         noise = default(None, lambda: torch.randn_like(y_cond))
+        # y_t = default(y_t, lambda: torch.randn_like(y_cond))
+        #start from noisy subsampled image fewer steps
         y_t = self.q_sample(y_0=y_cond, sample_gammas=gamma_t.view(1, 1, 1, 1),noise=noise)
         ret_arr = y_t
         for i in tqdm(reversed(range(0, self.num_timesteps)), desc='sampling loop time step', total=self.num_timesteps):
